@@ -1,0 +1,9 @@
+uuid: 4e3f8cef-c593-4f0e-b2ee-99df6508a221
+langcode: en
+status: true
+dependencies: {  }
+name: 'Resource Author'
+vid: resource_author
+description: ''
+hierarchy: 0
+weight: 0

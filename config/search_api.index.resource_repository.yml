@@ -1,0 +1,91 @@
+uuid: 2b87b3aa-6eac-4897-8526-06a0dee6b31b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - field.storage.node.field_published_date
+    - field.storage.node.field_resource_author
+    - field.storage.node.field_resource_category
+    - field.storage.node.field_resource_topic
+    - search_api.server.pantheon
+  module:
+    - taxonomy
+    - search_api
+    - node
+id: resource_repository
+name: 'Resource Repository'
+description: ''
+read_only: false
+field_settings:
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+  body:
+    label: Description
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  published_date:
+    label: 'Published Date'
+    datasource_id: 'entity:node'
+    property_path: field_published_date
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_published_date
+  resource_author:
+    label: 'Resource Author » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_resource_author:entity:name'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_resource_author
+      module:
+        - taxonomy
+  resource_category:
+    label: 'Resource Category » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_resource_category:entity:name'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_resource_category
+      module:
+        - taxonomy
+  resource_topic:
+    label: 'Resource Topic » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_resource_topic:entity:name'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_resource_topic
+      module:
+        - taxonomy
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - resource
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  rendered_item: {  }
+  aggregated_field: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: pantheon
