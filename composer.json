@@ -17,6 +17,7 @@
     "drupal/config_installer": "^1.0",
     "drupal/console": "^1",
     "drupal/core": "^8",
+    "drupal/facets": "^1.0@beta",
     "drupal/search_api_pantheon": "~1.0",
     "drupal/simple_block": "^1.0@beta",
     "drupal/webform": "^5.0@RC",
