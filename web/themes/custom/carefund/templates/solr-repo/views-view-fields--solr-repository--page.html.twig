@@ -1,0 +1,40 @@
+{% set member = fields.members_only.content|striptags|trim %}
+{% set url = fields.resource_url.content|striptags|trim %}
+{% set featured = fields.featured.content|striptags|trim %}
+
+{%
+set item_classes = [
+default_row_class ? 'views-row',
+'resourceItem',
+featured ? 'featuredItem',
+]
+%}
+
+<div{{ attributes.addClass(item_classes) }}>
+  <article>
+    <header>
+      <h2>
+        {% if '.pdf' in url %}
+          <img class="pdficon" src="/themes/custom/carefund/images/glyf_pdf.gif" alt="PDF Document" />
+        {% elseif '.xls' in url %}
+          <img class="excelicon" src="/themes/custom/carefund/images/glyf_excel.gif" alt="Excel Document" />
+        {% endif %}
+
+        {% if url %}
+          <a href="{{ url }}" target="_blank">{{ fields.title.content|striptags|trim }}</a>
+        {% else %}
+          {{ fields.title.content }}
+        {% endif %}
+
+        {% if member == 'True' %}
+          <img class="lockicon" src="/themes/custom/carefund/images/glyf_lock.gif" alt="Members Only" />
+        {% endif %}
+      </h2>
+      <h4>Published: {{ fields.published_date.content }} by {{ fields.resource_author.content }}</h4>
+      <h5>Subject matter: {{ fields.resource_topic.content }} | Resource format: {{ fields.resource_category.content }}</h5>
+    </header>
+    <p itemprop="articleBody">
+      {{ fields.body.content }}
+    </p>
+  </article>
+</div>

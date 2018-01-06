@@ -1,0 +1,22 @@
+<?php
+
+/*function carefund_preprocess(&$variables, $hook) {
+    if ($hook == 'node') {
+        xdebug_break();
+    }
+}*/
+
+/*function carefund_preprocess_page(&$variables) {
+  // Set the node ID if we're on a node page.
+  $nid = isset($variables['node']) ? $variables['node']->id() : '';
+
+  // Unset a region for one node ID.
+  if ($nid == '7') {
+    unset($variables['page']['sidebar_second']);
+  }
+
+  // Unset a region for multiple node ID's.
+  if (in_array($nid, ['1','2','3'])) {
+    unset($variables['page']['sidebar_first']);
+  }
+}*/

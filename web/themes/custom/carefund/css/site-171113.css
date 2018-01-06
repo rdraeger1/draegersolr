@@ -1,0 +1,547 @@
+﻿ext.select {
+  float: left;
+  width: 20%;
+}
+.select select {
+  height: 38px;
+}
+.search-contain form .query {
+  width: 60%;
+}
+.show{
+  display: block;
+}
+.hide{
+  display: none;
+}
+.fl-rgt a{
+  /*color: #fff;*/
+}
+.nav-bar ul ul li {
+  padding-bottom: 18px;
+}
+.nav-bar ul ul a{
+line-height: 23px;
+}
+#lnav .icon-lock {
+  color: #fff !important;
+}
+table#students tr,table#detail tr  {
+  border-bottom: 0.5px solid #2d5693;
+  height: 36px;
+}
+table#students tr:hover {
+  background-color: #7ac142;
+  color: #fff;
+}
+table#students tr td,table#detail tr td {
+  padding: 6px;
+}
+.respositoryFilter {
+  background: none repeat scroll 0 0 #2d5693;
+  list-style-type: none;
+  margin: 0 0 10px;
+  padding: 5px;
+}
+.respositoryFilter select {
+  margin: 8px auto;
+  padding: 4px;
+  width: 100%;
+}
+.filterform .searchWrap {
+  display:inline;
+}
+
+.searchfilter { 
+  width:69%;
+}
+
+.filtersubmit {
+  display:inline-block;
+}
+
+/* Find better way to do this -- right now, using Webform module to use exposed search GET parameter
+   to create search block at left of page.
+   If I dont expose, then I can't name parameter (and reference by Webform block).
+   However, exposing automatically shows search field in {{ exposed }} part at top of page.
+   If I can control output of that section (which I want to do to modify styles anyway), then I can probably
+   prevent that search field from being output.
+ */
+/*.js-form-item.form-item.js-form-type-textfield.form-type-textfield.js-form-item-search.form-item-search {
+  
+  display:none;
+
+}*/
+
+.resourceItem {
+    padding: 16px;
+}
+.repositroy .grid_3 {
+  margin-top: 12px;
+  padding: 0;
+  width: 17.55%;
+}
+.repositroy ul.sort-options-list li {
+  width: 100%;
+}
+.repositroy .grid_4 {
+  margin: 13px 0;
+  padding: 0;
+  text-align: left;
+  width: 24%;
+}
+.repositroy .grid_2 {
+  width: 15.9888%;
+  margin-top: 13px;
+  padding: 0;
+}
+.resourceItem.featuredItem {
+    border: 1px solid #00529b;
+    margin-bottom: 10px;
+    padding: 15px;
+    float: left;
+}
+.lockicon {
+    border: medium none;
+    padding-left: 10px;
+    position: relative;
+    top: 1px;
+}
+.pdficon, .excelicon, .ppticon, .wordicon {
+    border: medium none;
+    padding-right: 10px;
+}
+
+.pagination-view-list li, .pagination-pages-list li {
+    float: left;
+    list-style: outside none none;
+    margin-right: 10px;
+}
+
+
+p.noresourcesfound {
+    margin-top: 10px;
+}
+li.view {
+    width: 100%;
+}
+li.view li {
+    margin: 0;
+}
+li.view ul {
+  z-index: 99999;
+    display: none;
+}
+.pagination-view-list {
+  float: right;
+}
+.pagination-pages-list {
+  float: right;
+}
+.grid_5.fl-rgt ul li ul {
+  width: 35%;
+  z-index: 999999;
+}
+.grid_5.fl-rgt {
+    float: right;
+}
+li.view:hover {
+    background-color: #fff;
+    margin-top: -5px;
+    padding:0 0 0 7px;
+}
+li.view:hover ul {
+    background-color: #fff;
+    display: block;
+    margin-left: -8px;
+    padding: 5px 5px 5px 37px;
+    position: absolute;
+    width: 73%;
+}
+.pagination-view-list ul li, .pagination-pages-list ul li {
+    display: list-item;
+    float: none;
+}
+.sort-options-list li.view:after, .sort-direction-list li.view:after, .pagination-view-list li.view:after {
+    content: "\25BC";
+}
+
+.sort-options-list li, .sort-direction-list li {
+    float: left;
+    list-style: outside none none;
+    margin-right: 10px;
+}
+
+.sort-options-list li.view, .sort-direction-list li.view {
+    margin-left: -8px;
+    margin-top: -5px;
+    padding: 5px 6px 6px;
+    width: auto;
+}
+.sort-options-list li.view:hover, .sort-direction-list li.view:hover {
+    background-color: #fff;
+    margin-top: -5px;
+    padding: 4px 5px 6px;
+}
+.sort-options-list li.view:hover ul, .sort-direction-list li.view:hover ul {
+    background-color: #fff;
+    display: block;
+    margin-left: -5px;
+    padding: 5px;
+    position: absolute;
+}
+.sort-options-list li.view:hover ul {
+    width: 91%;
+}
+.sort-direction-list li.view:hover ul {
+    width: 77%;
+}
+
+.sort-options-list ul li, .sort-direction-list ul li {
+    display: list-item;
+    float: none;
+}
+
+.resourceItem h2, .resource h1 {
+    text-transform: none;
+}
+
+/* Specialty styles */
+
+.boxed {
+    background:#c8e3b4;
+    border-top:solid 3px #397708;
+    padding:10px;
+}
+
+.blue-boxed {
+    background:#2D5693;
+    border-top:solid 0px #2D5693;
+    padding:10px;
+    color: #ffffff;   
+}
+
+.product {
+         background: #ffffff;
+         border: solid 1px; #58595b;
+         padding: 10px;
+}
+
+/* Regional Newsletters */  
+
+.regionnl {
+    background:#2D5693;
+    padding:10px;
+}
+
+p.regionnl {
+  color: #ffffff;
+}
+
+/* Portraits */
+.img-pic {
+  padding: 4px 8px 4px 15px;
+  border: 0;
+}
+
+.img-rpic {
+  padding: 0px 0px 4px 8px;
+  border: 0;
+}
+
+.img-lpic {
+  padding: 0px 8px 4px 0px;
+  border: 0;
+}
+
+/* Icons */
+.img-icon {
+  padding: 0px;
+}
+
+/* Directory Photos */
+
+.dir-left {
+  float:left;
+                 padding:0px 10px 0px 0px;
+}
+
+.dir-right {
+  float:right;
+  padding:0px 0px 0px 10px;
+  position:relative 
+}
+
+/* End Directory Photos */
+
+
+
+/* Vista Awards */
+
+.vistalogo-left {
+  float:left;
+  width:170px;
+  margin-bottom: 5px;
+}
+
+.vistalogo-right {
+  position:relative;
+  width:530px;
+  float:right;
+}
+
+/* End Vista Awards */
+
+/* Education */
+
+.learnProducts {
+  
+  max-width:250px !important;
+  float:left; 
+  padding:5px 0px 10px 10px;  
+  -moz-border-radius: 0 0 5px 5px; 
+  -webkit-border-radius: 0 0 5px 5px; 
+  -o-border-radius: 0 0 5px 5px; 
+  border-radius: 0 0 5px 5px;
+  overflow-x: scroll; 
+  white-space: nowrap; 
+  overflow-y: hidden;
+}
+
+
+.learnProductsFull {
+  
+  max-width:800px !important;
+  float:left; 
+  padding:5px 0px 10px 10px;  
+
+}
+
+/* End Education */
+
+
+/* Monographs */
+
+mono-left {
+  padding; 20px 15px 0px 0px;
+  float:left; 
+}
+
+.mono-body {
+  display: block;
+  padding; 180px 0px 20px 10px;
+  float:left; 
+  position:relative;  
+}
+
+/* End Monographs */
+
+/* Engineering Week */
+
+.hew{
+        margin-left: 220px;
+}
+
+/* End Engineering Week */
+
+/* Career Flash */
+
+.career-left {
+  float:left;
+  width:450px;
+}
+
+.career-right {
+  position:relative;
+  width:250px;
+  float:right;
+}
+
+.posting {
+     margin-bottom: 30px;
+}
+
+
+.jobTitle {
+     color: 2D5693;
+     font-weight: bold;
+}
+
+.company {
+     color: 2D5693;
+     font-weight: bold;
+}
+
+/* End Career Flash */
+
+/* Inside ASHE */
+
+ul.noindent {
+  list-style-type: none;
+  margin-left: 0px;
+}
+
+.indent {
+margin-left: 20px;
+}
+
+/* End Inside ASHE */
+
+/* Press Release List */
+
+
+.pressdate {
+     margin-bottom: 15px;
+}
+
+.hrgreen {
+      color: #7AC142;
+
+}
+
+/* Barrier Videos */
+
+#barrier {
+  margin-bottom: 95px;
+ }
+
+#img-barrier {
+   margin-right: 20px;
+   text-align: left;
+   border: 0px;
+}
+
+/* End Barrier Videos */
+
+/* Video */
+
+#youtube {
+  width: 100%;
+  max-width: 640px;
+  margin-bottom: 25px;
+  }
+
+.video-container {
+  position:relative;
+  padding-bottom:56.25%;
+  padding-top:30px;
+  height:0;
+  overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+#containingBlock {
+  width: 50%;
+}
+
+.videoWrapper {
+  position: relative;
+  height: 0;
+}
+
+* html .videoWrapper {
+  margin-bottom: 45px;
+  margin-bot\tom: 0;
+}
+
+.videoWrapper div,
+.videoWrapper embed, 
+.videoWrapper object {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.wideScreen {
+  padding-bottom: 56.25%;
+}
+
+.fourBYthree {
+  padding-bottom: 75%;
+}
+
+.chrome_25 {
+  padding-top: 25px;
+}
+
+.chrome_35 {
+  padding-top: 35px;
+}
+
+/* End Video */
+
+/* Future Page */
+#img-future {
+   float: left; 
+   width: 333px; 
+   margin-top: 0px;
+   margin-left: 0px;
+   margin-right: 50px;
+   margin-bottom: 25px;
+}
+
+footer {
+  border-top: 1px solid grey;
+  margin-top: 25px;
+}
+
+/* Text Colors */
+
+.new {
+     color: c30303;
+     font-weight: bold;
+     }
+
+.job {
+     color: 2D5693;
+      }
+
+.organization {
+     color: 7AC142;
+     }
+.hero-banner .content h2 a {
+  color: #2c2c2b;
+  text-decoration: none;
+}
+.hero-banner .content h2 a:hover {
+  color:#5a6ea8;
+  text-decoration: underline;
+
+  }
+
+/* color of hyperlinks in accordian */
+
+a.aclink  {
+    color: #0b7EC8 !important;
+}  
+  
+  
+/* color of hyperlinks in the right side bar */  
+  
+a.rtlink { 
+  color:#66ccff;
+}
+
+a.rtlink:hover { text-decoration: underline; }
+
+.print_logo{
+  display: none;
+}
+
+@media only screen and (min-width:11.250em) and (max-width:47.938em) {
+.home-mid .block-1, .home-mid .block-2, .home-mid .block-3, .home-mid .block-4 {
+  height: auto; }
+}
+
+@media only screen and (max-width:1039px){
+.hero-banner .content h2 a { text-decoration: underline; }
+}
