@@ -1,0 +1,14 @@
+global-css:
+  version: "1.0"
+  css:
+    theme:
+      css/google-fonts.css: {}
+      css/icon-fonts.css: {}
+      css/grid.css: {}
+      css/style.css: {}
+      css/navigation.css: {}
+      css/formee.css: {}
+      css/slick.css: {}
+      css/site-171113.css: {}
+      css/custom.css: {}
+      //code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css: { type: external }

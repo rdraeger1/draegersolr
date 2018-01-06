@@ -1,0 +1,39 @@
+{#
+/**
+ * @file
+ * Theme override for a views exposed form.
+ *
+ * Available variables:
+ * - form: A render element representing the form.
+ *
+ * @see template_preprocess_views_exposed_form()
+ */
+#}
+{% if q is not empty %}
+  {#
+    This ensures that, if clean URLs are off, the 'q' is added first,
+    as a hidden form element, so that it shows up first in the POST URL.
+  #}
+{{ q }}
+{% endif %}
+<div class="form--inline clearfix">
+  <div class="">
+  	{{ form.sort_by }}
+  </div>
+  <div class="">
+  	{{ form.sort_order }}
+  </div>
+  <div class="">
+  	{{ form.items_per_page }}
+  </div>
+
+  {# form.actions #}
+
+  <div style="margin:1em; display:inline-block;">
+  	<input data-drupal-selector="edit-submit-solr-repository" type="submit" id="edit-submit-solr-repository" value="Apply" class="button js-form-submit form-submit">
+	</div>
+
+	<div style="margin:1em; display:inline-block;">
+  	<input data-drupal-selector="edit-reset" type="submit" id="edit-reset" name="op" value="Clear" class="button js-form-submit form-submit">
+	</div>
+</div>

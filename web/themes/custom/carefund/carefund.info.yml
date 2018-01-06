@@ -1,0 +1,7 @@
+name: CareFund
+type: theme
+description: CareFund single pager
+core: 8.x
+base theme: classy
+libraries:
+  - carefund/global-css
