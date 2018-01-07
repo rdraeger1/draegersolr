@@ -1,0 +1,9 @@
+uuid: ee45791d-1120-45c8-b51d-1094609e8a41
+langcode: en
+status: true
+dependencies: {  }
+name: 'Resource Topic'
+vid: resource_topic
+description: ''
+hierarchy: 0
+weight: 0
