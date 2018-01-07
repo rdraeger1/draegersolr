@@ -1,8 +1,0 @@
-uuid: fc387257-62af-4343-9e0f-88b62016a0c4
-langcode: en
-status: true
-dependencies: {  }
-id: written_date
-label: 'Written Date'
-locked: false
-pattern: 'F d, Y'

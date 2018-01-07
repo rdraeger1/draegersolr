@@ -5,17 +5,12 @@ dependencies:
   config:
     - field.storage.node.body
     - field.storage.node.field_published_date
-    - field.storage.node.field_members_only
-    - field.storage.node.field_featured
-    - field.storage.node.field_resource_url
     - field.storage.node.field_resource_author
     - field.storage.node.field_resource_category
     - field.storage.node.field_resource_topic
-    - field.storage.node.field_start_date
-    - field.storage.node.field_end_date
-    - field.storage.node.field_comments
     - search_api.server.pantheon
   module:
+    - taxonomy
     - search_api
     - node
 id: resource_repository
@@ -44,78 +39,36 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_published_date
-  members_only:
-    label: 'Members Only'
-    datasource_id: 'entity:node'
-    property_path: field_members_only
-    type: boolean
-    dependencies:
-      config:
-        - field.storage.node.field_members_only
-  featured:
-    label: Featured
-    datasource_id: 'entity:node'
-    property_path: field_featured
-    type: boolean
-    dependencies:
-      config:
-        - field.storage.node.field_featured
-  resource_url:
-    label: 'Resource URL'
-    datasource_id: 'entity:node'
-    property_path: field_resource_url
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_resource_url
   resource_author:
-    label: 'Resource Author'
+    label: 'Resource Author » Taxonomy term » Name'
     datasource_id: 'entity:node'
-    property_path: field_resource_author
+    property_path: 'field_resource_author:entity:name'
     type: text
     dependencies:
       config:
         - field.storage.node.field_resource_author
+      module:
+        - taxonomy
   resource_category:
-    label: 'Resource Category'
+    label: 'Resource Category » Taxonomy term » Name'
     datasource_id: 'entity:node'
-    property_path: field_resource_category
+    property_path: 'field_resource_category:entity:name'
     type: text
     dependencies:
       config:
         - field.storage.node.field_resource_category
+      module:
+        - taxonomy
   resource_topic:
-    label: 'Resource Topic'
+    label: 'Resource Topic » Taxonomy term » Name'
     datasource_id: 'entity:node'
-    property_path: field_resource_topic
+    property_path: 'field_resource_topic:entity:name'
     type: text
     dependencies:
       config:
         - field.storage.node.field_resource_topic
-  start_date:
-    label: 'Start Date'
-    datasource_id: 'entity:node'
-    property_path: field_start_date
-    type: date
-    dependencies:
-      config:
-        - field.storage.node.field_start_date
-  end_date:
-    label: 'End Date'
-    datasource_id: 'entity:node'
-    property_path: field_end_date
-    type: date
-    dependencies:
-      config:
-        - field.storage.node.field_end_date
-  comments:
-    label: Comments
-    datasource_id: 'entity:node'
-    property_path: field_comments
-    type: text
-    dependencies:
-      config:
-        - field.storage.node.field_comments
+      module:
+        - taxonomy
 datasource_settings:
   'entity:node':
     bundles:
@@ -126,9 +79,9 @@ datasource_settings:
       default: true
       selected: {  }
 processor_settings:
-  aggregated_field: {  }
   add_url: {  }
   rendered_item: {  }
+  aggregated_field: {  }
 tracker_settings:
   default:
     indexing_order: fifo

@@ -25,15 +25,4 @@ content:
   links:
     weight: 100
     region: content
-hidden:
-  field_comments: true
-  field_end_date: true
-  field_featured: true
-  field_members_only: true
-  field_published_date: true
-  field_resource_author: true
-  field_resource_category: true
-  field_resource_link: true
-  field_resource_topic: true
-  field_resource_url: true
-  field_start_date: true
+hidden: {  }
