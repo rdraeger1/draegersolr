@@ -1,9 +1,0 @@
-uuid: 3d86e288-9063-4aea-acf8-e1ad998ce572
-langcode: en
-status: true
-dependencies: {  }
-name: 'Resource Category'
-vid: r
-description: ''
-hierarchy: 0
-weight: 0
