@@ -1,0 +1,35 @@
+uuid: 9d5f6b21-d9d6-46cd-93fe-5ba2836a532e
+langcode: en
+status: true
+dependencies: {  }
+id: logout_redirect
+label: 'Logout Redirect'
+events:
+  -
+    event_name: rules_user_logout
+description: ''
+tags:
+  - ''
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 5940e129-8968-4d64-9e02-044f1aad847e
+  conditions:
+    id: rules_and
+    uuid: 01bddba7-3d5c-4467-9475-b9c895554a4e
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: cabe8b74-6db9-4819-a793-75f0d0559f57
+    actions:
+      -
+        id: rules_action
+        uuid: 60129caf-48e0-4e70-a87b-719dee37db75
+        context_values:
+          url: /solr-repository
+        context_mapping: {  }
+        context_processors:
+          url:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        action_id: rules_page_redirect

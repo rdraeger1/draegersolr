@@ -1,0 +1,28 @@
+uuid: a0775abb-da9d-44c5-88df-dc1d67fb1e94
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.published_date
+  module:
+    - facets
+    - system
+  theme:
+    - carefund
+id: publisheddate
+theme: carefund
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'facet_block:published_date'
+settings:
+  id: 'facet_block:published_date'
+  label: 'Published Date'
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /solr-repository
+    negate: false
+    context_mapping: {  }

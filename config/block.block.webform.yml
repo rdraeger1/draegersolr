@@ -1,0 +1,28 @@
+uuid: ab3b3c93-c9b8-46ed-9a20-d24f404fd3f7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - webform
+  theme:
+    - carefund
+id: webform
+theme: carefund
+region: sidebar_first
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Keyword Search'
+  provider: webform
+  label_display: '0'
+  webform_id: repo_keyword_search
+  default_data: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /solr-repository
+    negate: false
+    context_mapping: {  }

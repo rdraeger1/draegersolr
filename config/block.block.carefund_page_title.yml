@@ -1,0 +1,27 @@
+uuid: 9ce7f39a-5c4e-43f6-82a5-39d0cc4da7e0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - carefund
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: carefund_page_title
+theme: carefund
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /solr-repository
+    negate: true
+    context_mapping: {  }

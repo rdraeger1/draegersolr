@@ -1,0 +1,28 @@
+uuid: 477adcd2-43f1-4c78-9afe-f4730f4a9338
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.resource_topic
+  module:
+    - facets
+    - system
+  theme:
+    - carefund
+id: resourcetopic
+theme: carefund
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'facet_block:resource_topic'
+settings:
+  id: 'facet_block:resource_topic'
+  label: 'Subject Matter'
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /solr-repository
+    negate: false
+    context_mapping: {  }

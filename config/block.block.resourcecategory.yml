@@ -1,0 +1,28 @@
+uuid: 0144237d-e215-4c91-8a05-94cdd0f9193e
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.resource_category
+  module:
+    - facets
+    - system
+  theme:
+    - carefund
+id: resourcecategory
+theme: carefund
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'facet_block:resource_category'
+settings:
+  id: 'facet_block:resource_category'
+  label: 'Resource Format'
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /solr-repository
+    negate: false
+    context_mapping: {  }
